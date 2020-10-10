@@ -16,6 +16,7 @@
     justify-content: space-between;
 }
 .service{
+    z-index: 1;
     width: 310px;
     height: 387px;
     background-color: #EEF2FF;
@@ -48,6 +49,34 @@ hr{
     border-radius: 50px;
     background: linear-gradient(90.03deg, #2B87FF 2.95%, #2A7BE3 99.98%);
     box-shadow: 0px 5px 4px 0px #000000;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#openDash span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#openDash span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+#openDash:hover{
+    background: linear-gradient(0.03deg, #2B87FF 2.95%, #2A7BE3 99.98%);
+} 
+#openDash:hover span {
+    padding-right: 25px;
+}
+  
+#openDash:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 @keyframes barshrink{
     0%{transform: scaleY(1);}
@@ -65,27 +94,9 @@ hr{
     0%{transform: translateX(0px);}
     100%{transform: translateX(-10px)}
 }
-#svgStocks path{
-    animation: pathrotate 1s ease-out infinite alternate backwards;
-    animation-play-state: paused;
-}
-#svgStocks .shrink{
-    animation: barshrink 1s ease-out infinite alternate backwards;
-    animation-play-state: paused;
-}
-#svgStocks .grow{
-    animation: bargrow 1s ease-out infinite alternate backwards;
-    animation-play-state: paused;
-}
-#svgStocks .grow2{
-    animation: bargrow2 1s ease-out infinite alternate backwards;
-    animation-play-state: paused;
-}
+
 @keyframes wiggle {
-    0% { 
-        transform: skewX(9deg);
-        transform: translateY(0px);
-    } 
+    0% { transform: skewX(0deg); } 
     10% { transform: skewX(-8deg); } 
     20% { transform: skewX(7deg); } 
     30% { transform: skewX(-6deg); } 
@@ -97,19 +108,10 @@ hr{
     90% { transform: skewX(0deg); } 
     100% { transform: skewX(0deg); } 
 }
-#svgFunds{
-    animation: wiggle 1s ease-out infinite alternate backwards;
-    animation-play-state: paused;
-    
-} 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
     40% {transform: translateY(-30px);} 
     60% {transform: translateY(-15px);} 
-}
-#svgCrypto{
-    animation: bounce 2s ease-out infinite alternate backwards;
-    animation-play-state: paused;
 }
 @keyframes rotatecircle1{
     0%{transform: rotateZ(0deg);}
@@ -120,15 +122,17 @@ hr{
     100%{transform: rotateZ(-45deg);}
 }
 #circle1{
+    z-index: 0;
     position: absolute;
     left: -204px;
-    top: 1113px;
+    top: 413px;
     animation: rotatecircle1 10s ease-in-out infinite alternate forwards;
 }
 #circle2{
+    z-index: 0;
     position: absolute;
     right: -204px;
-    top: 724px;
+    top: 24px;
     animation: rotatecircle2 13s ease-in-out infinite alternate forwards;
 }
 #footer{
@@ -169,13 +173,13 @@ hr{
 
 @media (max-width: 6in){
     h1{
-        font-size: 20px;
+        font-size: 25px;
     }
     p{
-        font-size: 10px;
+        font-size: 13px;
     }
     svg{
-        height: 50%;
+        transform: scale(0.5,0.5);
     }
     #ourServices{
         padding-bottom: 20px;
