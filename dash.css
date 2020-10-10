@@ -10,7 +10,7 @@ body{
     left: 0;
     background-color: transparent; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 10px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 #sidenav img{
@@ -18,24 +18,25 @@ body{
     align-self: center;
 }
 #sidenav a {
-    padding: 4px 4px 4px 4px;
-    margin-top: 15px;
+    padding-left: 25px;
+    width: 205px;
+    margin-top: 35px;
     text-decoration: none;
     font-family: Gotham;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2px;
     letter-spacing: 0em;
-    text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     transition: 0.3s;
     border-radius: 50px;
     color: #B2B2B2;
 }
 #sideheading{
+    align-self: center;
     display: flex;
     flex-direction: row;
 }
@@ -77,12 +78,221 @@ body{
     background: linear-gradient(130.36deg, #F3F6FF 42.99%, #A0AED3 100.94%);
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
-    height: 100%;
+    min-height: 93vh; /*please fix this*/
+}
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+}
+.subcontainer h1{
+    font-family: Gotham;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.subcontainer button{
+    background: linear-gradient(90.03deg, #2B87FF 2.95%, #2A7BE3 99.98%);
+}
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    height: 70vh;
+}
+.stockCard{
+    color: #ffffff;
+    padding: 5px 10px;
+    background: linear-gradient(180deg, #191E57 69.27%, #030624 100%);
+    width: 275px;
+    height: 312px;
+    border-radius: 27px;
+    box-shadow: 0px 8px 4px 0px #000000;
+    margin: 15px 15px;
+}
+.stockCard h2{
+    font-family: Gotham;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+.stockCard p{
+    opacity: 90%;
+    font-family: Gotham;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.stockCard h3{
+    font-family: Gotham;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.stockCard h4{
+    display: inline;
+    font-family: Gotham;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00ff00;
+}
+.stockCard h5{
+    opacity: 70%;
+    display: inline;
+    font-family: Gotham;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00ff00;
+    margin-left: 15px;
+}
+.stockCard svg{
+    margin-top: 10px;
+}
+.fundcryptoCard{
+    color: #ffffff;
+    padding: 5px 10px;
+    background: linear-gradient(180deg, #191E57 69.27%, #030624 100%);
+    width: 275px;
+    height: 312px;
+    border-radius: 27px;
+    box-shadow: 0px 8px 4px 0px #000000;
+    margin: 15px 15px;
+}
+.fundcryptoCard h2{
+    font-family: Gotham;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.fundcryptoCard p{
+    opacity: 90%;
+    font-family: Gotham;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.fundcryptoCard h3{
+    font-family: Gotham;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+@media (max-width: 6in){
+    #sidenav {
+        background-color: #ffffff; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 10px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+    #sidenav a {
+        width: 225px;
+        
+    }
+    #sideheading{
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+    }
+    #main {
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        min-height: 85vh; /*please fix this*/
+    }
+    .subcontainer h1{
+        font-size: 32px;
+        line-height: 26px;
+        text-align: center;
+    }
+    .cardContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        overflow-y: auto;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        height: 70vh;
+    }
+    .stockCard{
+        padding: 5px 10px;
+        width: 125px;
+        height: 212px;
+        margin: 15px 5px;
+    }
+    .stockCard h2{
+        font-size: 26px;    
+    }
+    .stockCard p{
+        font-size: 12px;
+    
+    }
+    .stockCard h3{
+        font-size: 20px;
+    
+    }
+    .stockCard h4{
+        font-size: 14px;
+    }
+    .stockCard h5{
+        font-size: 14px;
+    }
+    .stockCard svg{
+        transform: scale(0.3,0.3) translateX(-302px);
+        margin-top: 0px;
+    }
+    .fundcryptoCard{
+        padding: 5px 10px;
+        width: 125px;
+        height: 212px;
+        margin: 15px 5px;
+    }
+    .fundcryptoCard h2{
+        font-size: 26px;
+    
+    }
+    .fundcryptoCard p{
+    
+        font-size: 12px;
+    
+    }
+    .fundcryptoCard h3{
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
