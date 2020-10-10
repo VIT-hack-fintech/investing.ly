@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="dash.css" media="screen"/>
+    <script src="dash.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sidenav">
+        <div id="sideheading">
+            <img src="./investing logo.svg">
+            <h1>Investing.ly</h1>   
+        </div>         
+        <a id="stocklink" onclick="stocks()"><img src="./stock grey.svg"><h5>Stocks</h5></a>
+        <a id="fundlink" onclick="mutualfunds()"><img src="./Mutual funds grey.svg"><h5>Mutual Funds</h5></a>
+        <a id="cryptolink" onclick="cryptocurrency()"><img src="./Bitcoin grey.svg"><h5>Cryptocurrency</h5></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+    
+
+    <div id="main">
+        <span onclick="openNav()">open</span>
+        <div id="container">
+
+        </div>
+    </div>   
+</body>
