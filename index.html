@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="home.css" media="screen"/>
+    <script src="home.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ourServices">
+        <div id="heading">
+         <h1>Our Services</h1> 
+         <hr>  
+        </div>
+        <div id="serviceContainer">
+            <div id="stocks" class="service" onmouseover="playStocks()" onmouseout="pauseStocks()">
+                <svg id="svgStocks" width="156" height="137" viewBox="0 0 156 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="grow" y="76" width="25" height="61" fill="#196F32"/>
+                <rect class="shrink" x="25" y="59" width="26" height="78" fill="#249746"/>
+                <rect class="grow2" x="51" y="14" width="25" height="123" fill="#2BB353"/>
+                <rect class="shrink" x="76" y="34" width="24" height="103" fill="#34C15E"/>
+                <rect class="grow" x="100" y="59" width="25" height="78" fill="#3CDF6D"/>
+                <path d="M85.1916 0.0092032C84.0922 -0.0966396 83.115 0.708868 83.0092 1.80835L81.2844 19.7255C81.1786 20.825 81.9841 21.8021 83.0835 21.908C84.183 22.0138 85.1601 21.2083 85.266 20.1088L86.7992 4.18244L102.726 5.71561C103.825 5.82145 104.802 5.01594 104.908 3.91645C105.014 2.81697 104.208 1.83985 103.109 1.73401L85.1916 0.0092032ZM155.089 57.6778C156.015 57.0766 156.279 55.8381 155.678 54.9115L145.881 39.8111C145.28 38.8844 144.041 38.6206 143.115 39.2218C142.188 39.823 141.924 41.0615 142.525 41.9882L151.234 55.4107L137.811 64.119C136.884 64.7202 136.621 65.9588 137.222 66.8854C137.823 67.812 139.062 68.0759 139.988 67.4747L155.089 57.6778ZM83.4568 3.27219C90.0673 11.291 101.456 23.6105 114.198 34.5772C126.864 45.478 141.17 55.3118 153.583 57.9561L154.417 54.0439C143.071 51.6271 129.427 42.4065 116.808 31.5454C104.265 20.7502 93.033 8.60017 86.5432 0.727808L83.4568 3.27219Z" fill="black"/>
+                </svg>
+                <h1>Stocks</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusamus, unde fugit maiores quae soluta cumque exercitationem culpa veniam voluptates a animi enim ut, rem nulla facilis accusantium, delectus alias.</p>
+            </div>
+            <div id="mutualfunds" class="service" onmouseover="playFunds()" onmouseout="pauseFunds()">
+                <svg id="svgFunds" width="147" height="134" viewBox="0 0 147 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.2571 133.784C-35.9517 117.539 16.4856 56.9378 51.7304 28.668C46.5727 27.4735 35.4834 22.4566 32.3886 11.945C29.2938 1.4335 43.9936 7.56523 51.7304 11.945C44.5097 7.16704 48.7218 1.99085 51.7304 0H83.9663C99.4396 0 96.4309 7.96336 92.9924 11.945C112.592 7.16704 112.334 13.9359 109.755 17.9175L98.1502 28.668C180.675 98.4267 140.272 127.811 109.755 133.784H36.2571Z" fill="url(#paint0_linear)"/>
+                    <path d="M53.899 29.1892H96.713M53.899 29.1892C47.8445 33.9066 34.6976 45.9361 30.5459 56.3145M53.899 29.1892C49.5744 34.2998 41.7035 49.2383 44.8173 68.1081" stroke="#FFDA55" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M72.6841 99.6757L63.6121 83.8357V81.7237H64.6681C67.2281 81.7237 69.1801 81.3557 70.5241 80.6197C71.9001 79.8837 72.7001 78.5557 72.9241 76.6357H63.6121V73.5637H72.8761C72.5561 71.7717 71.7081 70.4757 70.3321 69.6757C68.9881 68.8757 67.1001 68.4757 64.6681 68.4757H63.6121V65.4037H83.4841V68.4757H74.4121C75.9481 69.7237 76.8601 71.4197 77.1481 73.5637H83.4841V76.6357H77.2441C77.0201 78.9717 76.1241 80.7957 74.5561 82.1077C73.0201 83.3877 70.9721 84.2037 68.4121 84.5557L77.5801 99.6757H72.6841Z" fill="#FFDA55"/>
+                    <defs>
+                    <linearGradient id="paint0_linear" x1="37.5" y1="-1.28427e-06" x2="124" y2="126.5" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.614583" stop-color="#28B351"/>
+                    <stop offset="1" stop-color="#196E32"/>
+                    </linearGradient>
+                    </defs>
+                </svg>                    
+                <h1>Mutual Funds</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusamus, unde fugit maiores quae soluta cumque exercitationem culpa veniam voluptates a animi enim ut, rem nulla facilis accusantium, delectus alias.</p>
+            </div>
+            <div id="crypto" class="service" onmouseover="playCrypto()" onmouseout="pauseCrypto()">
+                <svg id="svgCrypto" width="134" height="134" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="67" cy="67" r="67" fill="#28B351"/>
+                    <circle cx="67" cy="67" r="52.5247" fill="white"/>
+                    <path d="M62.5333 53.0417V48.0167M68.1167 53.0417V48.0167M62.5333 75.375V81.5167M68.1167 75.375V81.5167" stroke="#28B351" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M68.7605 51.9234H57.4565V77.1234H69.1206C70.5126 77.1234 71.7846 76.9794 72.9366 76.6914C74.0885 76.3794 75.0726 75.9354 75.8886 75.3594C76.7046 74.7594 77.3286 74.0274 77.7606 73.1634C78.2166 72.2994 78.4446 71.3034 78.4446 70.1754C78.4446 69.3114 78.3246 68.5554 78.0846 67.9074C77.8446 67.2354 77.4966 66.6594 77.0405 66.1794C76.6086 65.6994 76.0806 65.2914 75.4566 64.9554C74.8565 64.5954 74.1845 64.2834 73.4406 64.0194C73.8966 63.7794 74.3406 63.4914 74.7726 63.1554C75.2286 62.8194 75.6126 62.4354 75.9246 62.0034C76.2606 61.5474 76.5245 61.0194 76.7165 60.4194C76.9325 59.8194 77.0405 59.1354 77.0405 58.3674C77.0405 56.3754 76.2965 54.8034 74.8085 53.6514C73.3206 52.4994 71.3046 51.9234 68.7605 51.9234ZM67.8605 62.5434H61.8125V55.8474H68.1845C69.6245 55.8474 70.7165 56.1354 71.4606 56.7114C72.2286 57.2634 72.6126 58.0554 72.6126 59.0874C72.6126 60.2634 72.1806 61.1394 71.3165 61.7154C70.4525 62.2674 69.3005 62.5434 67.8605 62.5434ZM69.1565 73.1994H61.8125V66.2874H68.8325C70.5845 66.2874 71.8805 66.5874 72.7205 67.1874C73.5845 67.7874 74.0165 68.6274 74.0165 69.7074C74.0165 70.8594 73.5845 71.7354 72.7205 72.3354C71.8565 72.9114 70.6685 73.1994 69.1565 73.1994Z" fill="#28B351"/>
+                </svg>
+                <h1>Crypto</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusamus, unde fugit maiores quae soluta cumque exercitationem culpa veniam voluptates a animi enim ut, rem nulla facilis accusantium, delectus alias.</p>
+           </div>
+        </div>
+        <button id="openDash">Open Dashboard</button>
+        <svg id="circle1" width="412" height="412" viewBox="0 0 412 412" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="206" cy="206" r="205.5" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="182.335" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="159.998" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="136.833" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="113.669" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="91.3313" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="68.1667" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="30.1104" stroke="#371841"/>
+        </svg>
+        <svg id="circle2" width="412" height="412" viewBox="0 0 412 412" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="206" cy="206" r="205.5" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="182.335" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="159.998" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="136.833" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="113.669" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="91.3313" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="68.1667" stroke="#371841" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="40 10"/>
+            <circle cx="206" cy="206" r="30.1104" stroke="#371841"/>
+        </svg>
+    </div>
+    <div id="footer" class="foot">
+        <div id="about">
+            <h2>About</h2>
+            <p>investing.ly</p>
+        </div>
+        <div id="address" class="foot">
+            <h2>Address</h2>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+        <div id="contact" class="foot">
+            <h2>Contact</h2>
+            <p>+91 2359-8276 </p>
+        </div>
+        <div id="social" class="foot">
+            <h2>Socials</h2>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.3333 1.66669H6.66663C3.9052 1.66669 1.66663 3.90526 1.66663 6.66669V33.3334C1.66663 36.0948 3.9052 38.3334 6.66663 38.3334H33.3333C36.0947 38.3334 38.3333 36.0948 38.3333 33.3334V6.66669C38.3333 3.90526 36.0947 1.66669 33.3333 1.66669Z" stroke="white" stroke-width="3"/>
+                <path d="M11.6634 0C5.23174 0 0 5.23659 0 11.6699V28.3366C0 34.7682 5.23659 40 11.6699 40H28.3366C34.7682 40 40 34.7634 40 28.3301V11.6634C40 5.23174 34.7634 0 28.3301 0H11.6634ZM31.6667 6.66667C32.5867 6.66667 33.3333 7.41333 33.3333 8.33333C33.3333 9.25333 32.5867 10 31.6667 10C30.7467 10 30 9.25333 30 8.33333C30 7.41333 30.7467 6.66667 31.6667 6.66667ZM20 10C25.515 10 30 14.485 30 20C30 25.515 25.515 30 20 30C14.485 30 10 25.515 10 20C10 14.485 14.485 10 20 10ZM20 13.3333C18.2319 13.3333 16.5362 14.0357 15.286 15.286C14.0357 16.5362 13.3333 18.2319 13.3333 20C13.3333 21.7681 14.0357 23.4638 15.286 24.714C16.5362 25.9643 18.2319 26.6667 20 26.6667C21.7681 26.6667 23.4638 25.9643 24.714 24.714C25.9643 23.4638 26.6667 21.7681 26.6667 20C26.6667 18.2319 25.9643 16.5362 24.714 15.286C23.4638 14.0357 21.7681 13.3333 20 13.3333Z" fill="white"/>
+            </svg>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35.2381 0H4.7619C2.13333 0 0 2.13333 0 4.7619V35.2381C0 37.8667 2.13333 40 4.7619 40H35.2381C37.8667 40 40 37.8667 40 35.2381V4.7619C40 2.13333 37.8667 0 35.2381 0ZM31.4286 14.2857H29.5238C27.4857 14.2857 26.6667 14.7619 26.6667 16.1904V19.0477H31.4286L30.4762 23.8096H26.6667V38.0952H21.9048V23.8096H18.0952V19.0477H21.9048V16.1904C21.9048 12.381 23.8096 9.52381 27.619 9.52381C30.381 9.52381 31.4286 10.4762 31.4286 10.4762V14.2857Z" fill="white"/>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
