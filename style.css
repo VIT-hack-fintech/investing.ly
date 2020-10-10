@@ -1,0 +1,291 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+}
+nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: transparent;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0vh 20px;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    z-index: 100;
+    transition: 1s;
+}
+nav .brand{
+    display: flex;
+    font-size: 22px;
+    font-weight: 100;
+    height: 100%;
+    align-items: center;
+}
+nav .hamburger{
+    width: 25px;
+    margin-top:7vh;
+    height: 7vh;
+    display: none;
+    transition: 1s;
+}
+.hamburger div{
+    height: 3px;
+    margin: 5px 0;
+    background-color: black;
+    border-radius: 13px;
+}
+.hamburger .hamline1{
+    width: 100%;
+}
+.hamburger .hamline2{
+    width: 80%;
+    margin-left: 20%;
+}
+.hamburger .hamline3{
+    width: 100%;
+}
+nav .brand img{
+    height: 8vh;
+    margin-top: 2vh;
+}
+nav .brand h1{
+    margin: 0;
+    font-weight: 100;
+}
+nav ul{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    height: 100%;
+    font-weight: 400;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    font-size: 20px;
+}
+nav ul li{
+    border-radius: 5px;
+}
+nav ul .signin{
+    padding: 5px 25px;
+    background-color: rgba(55, 24, 65, 1);
+    color: white;
+}
+.landing{
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top:0;
+    z-index: 50;
+    background: linear-gradient(261.45deg, #659BE2 3.61%, #B2DEEC 53.15%, #D6F5FF 95.95%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+#main{
+    height: 80vh;
+    position: absolute;
+    top:12vh;
+    right:2%;
+}
+.landing .content{
+    height: 50vh;
+    margin-top: 25vh;
+    width: 40%;
+    margin-left:15%;
+    font-size: 1.9em;
+    font-family: 'poppins',sans-serif;
+}
+/* .landing .content h1{
+    font-size: 2em;
+} */
+.landing .content button{
+    background-color:rgba(41, 122, 228, 1);
+    color: white;
+    width: 225px;
+    margin: 0px 30px;
+    letter-spacing: 1px;
+    height: 60px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+@keyframes personA{
+    0%{
+        transform: rotateZ(-5deg);
+    }
+    50%{
+        transform: rotateZ(10deg);
+    }
+    100%{
+        transform: rotateZ(-5deg);
+    }
+}
+@keyframes personB{
+    0%{
+        transform: rotateZ(5deg);
+    }
+    50%{
+        transform: rotateZ(-10deg);
+    }
+    100%{
+        transform: rotateZ(5deg);
+    }
+}
+@keyframes rotateF{
+    to{
+        transform: rotateZ(360deg) ;
+    }
+}
+@keyframes rotateB{
+    to{
+        transform: rotateZ(-360deg) ;
+    }
+}
+#Group_1{
+    transition: 1s;
+    animation: personA 3s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#Group_2{
+    transition: 1s;
+    animation: personB 3s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+.circle:nth-child(1){
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translate(-50%,-50%);
+}
+.circle:nth-child(2){
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.circle path:nth-child(even){
+    transition: 1s;
+    animation: rotateF 30s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+.circle path:nth-child(odd){
+    transition: 1s;
+    animation: rotateB 30s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@media screen and (max-width:1300px){
+    .landing .content{
+        font-size: 1.5em;
+        margin-left: 17%;
+    }
+    #main{
+        height: 75vh;
+        top:15vh;
+        right:0;
+    }
+}
+@media screen and (max-width:1100px){
+    .landing .content{
+        font-size: 1.2em;
+        margin-left: 12%;
+    }
+    #main{
+        height: 70vh;
+        top:20vh;
+        right:0;
+    }
+    .circle:nth-child(1){
+        height: 40vh;
+    }
+    .circle:nth-child(2){
+        height: 40vh;
+    }
+    nav ul{
+        width:40%;
+    }
+}
+@media screen and (max-width:950px){
+    .landing .content{
+        font-size: 1em;
+        margin-left: 17%;
+        margin-top: 30vh;
+    }
+    #main{
+        height: 65vh;
+        top:25vh;
+        right:-75px;
+    }
+    .circle:nth-child(1){
+        height: 35vh;
+    }
+    .circle:nth-child(2){
+        height: 35vh;
+    }
+    .landing .content button{
+        margin-left:0 ;
+    }
+}
+@media screen and (max-width:800px){
+    .landing{
+        height: 100vh;
+    }
+    .circle:nth-child(1){
+        top:40%;
+        height: 30vh;
+    }
+    .circle:nth-child(2){
+        display: none;
+    }
+    .landing .content{
+        height: 40vh;
+        margin-top: 55vh;
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+        margin-left: 0;
+    }
+    #main{
+        top:12vh;
+        width: 100%;
+        right: 0;
+        height: 40vh;
+    }
+    .landing .content button{
+        width:200px;
+        height: 50px;
+    }
+    .landing .content button{
+        margin:0 ;
+    }
+    nav ul{
+        position: absolute;
+        top:50%;
+        left:100%;
+    }
+    nav .brand img{
+        height: 6vh;
+    }
+    nav .brand {
+        font-size: 18px;
+    }
+    nav .hamburger{
+        display: block;
+    }
+}
+@media screen and (max-width:375px){
+    #main{
+        left:-10px;
+    }
+}
