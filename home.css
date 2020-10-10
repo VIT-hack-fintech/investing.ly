@@ -271,7 +271,7 @@ hr{
     }
     
 }
-@media sreen and (max-width:800px){
+@media screen and (max-width:800px){
     #ourServices{
         margin-top: 5px;
     }
