@@ -44,6 +44,11 @@ const stocks = () =>{
     document.getElementById("fundlink").className="none";
     document.getElementById("stocklink").className="selected";
     document.getElementById("cryptolink").className="none";
+    document.getElementById("btn").innerText = "Add Stocks";
+    document.querySelector('.inp-head').innerText = "Add Stocks To Your Profile";
+    document.querySelectorAll('form label')[0].innerText="Stock Code:";
+    document.querySelectorAll('form label')[1].innerText="Purchase Price";
+    document.querySelectorAll('form label')[2].innerText="Quantity";
     if(x<600){
         closeNav();
     }
@@ -55,6 +60,8 @@ const goStock = () =>{
         document.getElementById("stockCardContainer").innerHTML+=htmlstockcard;
     }
 }
+
+
 const mutualfunds = () =>{
     document.getElementById("container").innerHTML=htmlfunds;
     document.getElementById("stocklink").innerHTML=htmlgreystock;
@@ -63,6 +70,11 @@ const mutualfunds = () =>{
     document.getElementById("fundlink").className="selected";
     document.getElementById("stocklink").className="none";
     document.getElementById("cryptolink").className="none";
+    document.getElementById("btn").innerText = "Add Mutual Fund";
+    document.querySelector('.inp-head').innerText = "Add funds to your portfolio";
+    document.querySelectorAll('form label')[0].innerText="Scheme Code:";
+    document.querySelectorAll('form label')[1].innerText="Purchase NAV:";
+    document.querySelectorAll('form label')[2].innerText="Purchased Units:";
     if(x<600){
         closeNav();
     }
@@ -82,6 +94,11 @@ const cryptocurrency = () =>{
     document.getElementById("fundlink").className="none";
     document.getElementById("stocklink").className="none";
     document.getElementById("cryptolink").className="selected";
+    document.getElementById("btn").innerText = "Add Cryptocurrency";
+    document.querySelector('.inp-head').innerText = "Add funds to your portfolio";
+    document.querySelectorAll('form label')[0].innerText="Crypto Code:";
+    document.querySelectorAll('form label')[1].innerText="Purchased Coins:";
+    document.querySelectorAll('form label')[2].innerText="Purchsed Points:";
     if(x<600){
         closeNav();
     }
@@ -92,4 +109,12 @@ const goCrypto = () =>{
     {
         document.getElementById("cryptoCardContainer").innerHTML+=htmlfundcryptocard;
     }
+}
+const bntClick = ()=>{
+    document.querySelector('#modal').classList.add('mod-active');
+        document.querySelector('.input-container').classList.add('inp-active');
+}
+const modClick = ()=>{
+    document.querySelector('.input-container').classList.remove('inp-active');
+    document.querySelector('#modal').classList.remove('mod-active');
 }

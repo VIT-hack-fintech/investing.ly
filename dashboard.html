@@ -19,6 +19,27 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     </div>
     <div id="main">
+        <div class="modal" onclick="modClick()" id="modal"></div>
+        <div class="add-btn"><button onclick="bntClick()" id="btn">Add stock</button></div>
+        <div class="input-container">
+            <div class="inp-head">Add Stocks To Your Profile</div>
+            <div class="form">
+                <div class="upform">
+                    <form action="">
+                        <label for="Scode">Stock Code:</label>
+                        <input type="text" name="Scode" id="">
+                        <label for="Pprice">Purchase Price:</label>
+                        <input type="number" name="Pprice" id="">
+                        <label for="quantity">quantity</label>
+                        <input type="number" name="quantity" id="">
+                        <div class="buttons">
+                            <button>Reset</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <span onclick="openNav()">open</span>
         <div id="container">
 

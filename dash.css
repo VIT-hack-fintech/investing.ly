@@ -214,6 +214,127 @@ body{
     text-align: left;
 
 }
+.modal{
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 80;
+    display: none;
+}
+.mod-active{
+    display: block;
+}
+.add-btn{
+    position: absolute;
+    top:40px;
+    right: 40px;
+}
+.add-btn button{
+    min-width: 200px;
+    box-sizing: border-box;
+    padding-top:3px 10px;
+    height: 40px;
+    background: linear-gradient(90.03deg, #2B87FF 2.95%, #2A7BE3 99.98%);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border:none;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1px;
+    outline: none;
+}
+.input-container.inp-active{
+    transform: translate(-50%,0%);
+    opacity: 1;
+}
+.input-container{
+    position: fixed;
+    bottom: 0;
+    z-index: 80;
+    width:40%;
+    height: 500px;
+    background-color: white;
+    left:50%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    font-family:'poppins',sans-serif;
+    transform: translate(-50%,100%);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.inp-head{
+    height: 15%;
+    text-align: center;
+    padding-top: 5%;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+.form{
+    margin-top: 5%;
+    height: 75%;
+}
+.input-container .form form input{
+    display: block;
+    width:80%;
+    margin:0 auto 6% auto;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+    font-size: 18px;
+    text-align: center;
+}
+.input-container .form form label{
+    margin-top: 6%;
+    margin-left: 11%;
+    text-align: start;
+}
+.input-container .buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.input-container .form form button{
+    width: 40%;
+    display: block;
+    margin: auto;
+    height: 40px;
+    background: linear-gradient(90.03deg, #2B87FF 2.95%, #2A7BE3 99.98%);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border:none;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+@media screen and (max-width:900px){
+    .input-container{
+        width:60%;
+        height: 450px;
+    }
+}
+@media screen and (max-width:500px){
+    .input-container{
+        width:90%;
+        height: 400px;
+    }
+    #container{
+        margin-top: 45px;
+    }
+    .add-btn{
+        top:10px;
+        right:10px;
+    }
+    #btn{
+        
+        font-size: 13px;
+        min-width: 100px;
+    }
+}
 @media (max-width: 6in){
     #sidenav {
         background-color: #ffffff; /* Black*/
