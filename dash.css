@@ -64,6 +64,7 @@ body .hamburger{
 #sideheading a{
     padding: 0px 0px;
     margin: 0px 0px;
+    width:auto;
 }
 
 #sideheading{
