@@ -35,12 +35,17 @@ body{
     border-radius: 50px;
     color: #B2B2B2;
 }
+#sideheading a{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
 #sideheading{
     align-self: center;
     display: flex;
     flex-direction: row;
 }
-#sidenav h1{
+#sideheading h1{
     font-family: Gotham;
     font-size: 24px;
     font-style: normal;
@@ -48,9 +53,7 @@ body{
     line-height: 23px;
     letter-spacing: 0em;
     text-align: center;
-    
-
-
+    color: #000000;
 }
 .selected{
     background-color: #f0f7ff;
@@ -65,12 +68,17 @@ body{
     background-color: #f0f7ff;
 
 }
-  
+#sideheading a:hover{
+    background-color: #ffffff;
+}
   /* Position and style the close button (top right corner) */
 #sidenav .closebtn {
+    position: absolute;
+    top: 0%;
+    left: 200px;
     font-size: 36px;
 }
-  
+ 
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;

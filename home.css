@@ -12,6 +12,9 @@ body{
     margin-top: 40vh;
     overflow-x: hidden;
 }
+#ourServices a{
+    align-self: center;
+}
 #heading{
     margin-left: 65px;
     width: 350px;
