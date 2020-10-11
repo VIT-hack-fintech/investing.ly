@@ -138,7 +138,7 @@ body .hamburger{
     overflow-y: auto;
     overflow-x: hidden;
     flex-wrap: wrap;
-    height: 70vh;
+    height: 85vh;
 }
 .stockCard{
     color: #ffffff;
@@ -392,10 +392,10 @@ body .hamburger{
         min-height: 85vh; /*please fix this*/
     }
     .subcontainer{
-        margin-top: 50px;
+        margin-top: 0px;
     }
     .subcontainer h1{
-        margin-top: 20px;
+        margin-top: 0px;
         font-size: 32px;
         line-height: 26px;
         text-align: center;
@@ -407,7 +407,7 @@ body .hamburger{
         overflow-y: auto;
         overflow-x: hidden;
         flex-wrap: wrap;
-        height: 70vh;
+        height: 78vh;
     }
     .stockCard{
         padding: 5px 10px;
